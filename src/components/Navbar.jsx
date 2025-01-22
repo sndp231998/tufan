@@ -88,7 +88,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to={PATHS.HOME}>
-            <img className="w-20" src="src/assets/tufanLogo.png" />
+            <img className="w-20" src="https://s3-alpha-sig.figma.com/img/8dcf/2faa/f2485d2d24d1db04a3dd16f532678bf5?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qvRAAJpxqEpswOJ8875xC7ViguycFSC5w0eA8jzoSAG4rsV-Dj-DmHRofHOpuaZFYqXXo4i3yI4wf34tqRg~pu8~1EcN6PBIc2ayPbId3uvELoVruKNiYqxWDtZTziE9CEwG5S3BwI1c~NeJQXpyokNSScZX93C1NA~llzjVOKcX8~KtakA~XRG1ToMFVDdD9V0Xwb4rUwxl1MAL9JglKB97pVKJVUntZNqhtSUeBqKO-J44BX-RB6faNXEqKuwSdrZQwaJYJ4TSxU~~pra7zOPzdhiG~7tsfUghXtjKVTfrAeeObwoC02d9WU-rH3mlgUP-PtlMOWg5g4pRhg2ing__" />
           </Link>
 
           {/* Desktop Navigation */}
