@@ -37,7 +37,7 @@ export default function Home() {
             <img
               alt="Banner Image"
               className="w-full h-full"
-              src="/src/assets/toofanBanner.png"
+              src="https://s3-alpha-sig.figma.com/img/f692/b26e/313797b2635cb4e1f4a88134873169c9?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UYH-5~GQ4xuYpLbKZV9nz5gN4NJ0nFDuRf45wet~qYalvRQLiXdOU9fgQyLuUwPEcBlfgYSu~bsUblKV2vE6x4e9~HNaa~Xj5wC~LFTg2-y~91ypsrqAdy52JblnHJsgX~voDs0CxJF5f9-gZ2IVajGDWNLyJHQKSizdFM4Qqv51DEbwuNLyeXN15a~YkFJFD465ztK7CRPUiQgeAu6to19equof0E2bjiiVegF2BQl8eZSNi92kE4393hP~8MyPNKIIUQdDkhEwcL1JUZRICLAB9Cy-5AUJscjK7w4WdBm~dIEGKiVfQlMLjoPPalXHlvmJwMS7D3KXyr9RdZcwEg__"
             />
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function Home() {
             <img
               alt="Banner Image"
               className=""
-              src="/src/assets/toofanBanner.png"
+              src="https://s3-alpha-sig.figma.com/img/f692/b26e/313797b2635cb4e1f4a88134873169c9?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UYH-5~GQ4xuYpLbKZV9nz5gN4NJ0nFDuRf45wet~qYalvRQLiXdOU9fgQyLuUwPEcBlfgYSu~bsUblKV2vE6x4e9~HNaa~Xj5wC~LFTg2-y~91ypsrqAdy52JblnHJsgX~voDs0CxJF5f9-gZ2IVajGDWNLyJHQKSizdFM4Qqv51DEbwuNLyeXN15a~YkFJFD465ztK7CRPUiQgeAu6to19equof0E2bjiiVegF2BQl8eZSNi92kE4393hP~8MyPNKIIUQdDkhEwcL1JUZRICLAB9Cy-5AUJscjK7w4WdBm~dIEGKiVfQlMLjoPPalXHlvmJwMS7D3KXyr9RdZcwEg__"
             />
           </div>
         </div>
