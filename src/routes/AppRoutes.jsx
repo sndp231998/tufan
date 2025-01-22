@@ -3,7 +3,7 @@ import { PATHS } from "../constants/path";
 import Home from "../pages/Home";
 import About from "../pages/About"
 import Faq from "../pages/faq";
-import Contact from "../pages/contact";
+import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
 import Layout from "../layout/Layout";
 import Blog from "../pages/blog";
