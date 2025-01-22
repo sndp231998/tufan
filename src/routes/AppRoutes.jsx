@@ -6,7 +6,7 @@ import Faq from "../pages/faq";
 import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
 import Layout from "../layout/Layout";
-import Blog from "../pages/blog";
+import Blog from "../pages/Blog";
 
 export default function AppRoutes(){
     return (
