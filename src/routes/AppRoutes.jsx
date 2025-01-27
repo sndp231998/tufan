@@ -7,20 +7,28 @@ import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
 import Layout from "../layout/Layout";
 import Blog from "../pages/Blog";
+import LoginPage from "../pages/auth/LoginPage"
+import RegisterPage from "../pages/auth/RegisterPage"
+import OtpPage from "../pages/auth/OtpPage"
+import PasswordPage from "../pages/auth/PasswordPage"
 
-export default function AppRoutes(){
-    return (
-      <BrowserRouter>
-        <Routes>
-          <Route path={PATHS.HOME} element={<Layout />}>
-            <Route path={PATHS.HOME} element={<Home />} />
-            <Route path={PATHS.ABOUT} element={<About />} />
-            <Route path={PATHS.FAQ} element={<Faq />} />
-            <Route path={PATHS.CONTACT} element={<Contact />} />
-            <Route path={PATHS.NOTFOUNT} element={<NotFound />} />
-            <Route path={PATHS.BLOG} element={<Blog />} /> 
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    );
+export default function AppRoutes() {
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path={PATHS.HOME} element={<Layout />}>
+					<Route path={PATHS.HOME} element={<Home />} />
+					<Route path={PATHS.ABOUT} element={<About />} />
+					<Route path={PATHS.FAQ} element={<Faq />} />
+					<Route path={PATHS.CONTACT} element={<Contact />} />
+					<Route path={PATHS.NOTFOUNT} element={<NotFound />} />
+					<Route path={PATHS.BLOG} element={<Blog />} />
+					<Route path={PATHS.LOGIN} element={<LoginPage />} />
+					<Route path={PATHS.REGISTER} element={<RegisterPage />} />
+					<Route path={PATHS.OTPPAGE} element={<OtpPage />} />
+					<Route path={PATHS.PASSWORDPAGE} element={<PasswordPage />} />
+				</Route>
+			</Routes>
+		</BrowserRouter>
+	);
 }
