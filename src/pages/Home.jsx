@@ -3,7 +3,7 @@ import { ThemeContext } from "../themeContext";
 import Misson from "../components/Misson";
 import tufanLogo from "../assets/tufanLogo.png";
 import tufanBanner from "../assets/toofanBanner.png";
-import BannerGif from "../assets/Home.gif"
+import BannerGif from "../assets/home.gif"
 
 export default function Home() {
 	const { theme, toggleTheme } = useContext(ThemeContext);

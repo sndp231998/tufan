@@ -1,6 +1,6 @@
 import BannerImage from "../assets/rideBanner.png";
 import Person from "../assets/ridePerson.jpeg";
-import BannerGif from "../assets/Home.gif";
+import BannerGif from "../assets/home.gif";
 import BusImage from "../assets/busImage.png";
 
 export default function BusTicket() {
