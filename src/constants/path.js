@@ -10,4 +10,6 @@ export const PATHS = {
 	SERVICES: "/services",
 	OTPPAGE: "/otppage",
 	PASSWORDPAGE: "/passwordpage",
+	RIDESHARE: "/rideshare",
+	BUSTICKET: "/busticket",
 }

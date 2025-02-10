@@ -10,12 +10,16 @@ export default function Blog() {
 	])
 	return (
 		<>
-			<div className="flex flex-wrap-reverse border border-red-700 mt-4">
-				<div className="flex flex-col gap-3 md:gap-8 w-full md:w-1/3 bg-red-300 p-4">
-					<form>
-						<input className="w-full py-5 px-6 border border-gray-300 rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" placeholder="Type something" />
+			<div className="flex flex-col gap-3 md:gap-8 w-full  p-4">
 
-					</form>
+				<form>
+					<input className="w-full py-5 px-6 border border-gray-300 rounded-md bg-background focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" placeholder="Type something" />
+
+				</form>
+			</div>
+
+			<div className="flex flex-wrap-reverse border mt-4">
+				<div className="flex flex-col gap-3 md:gap-8 w-full md:w-1/3 p-4">
 					<div className="flex flex-col justify-center p-4 border border-gray-300 gap-3 rounded-md">
 						<p className="text-lg md:text-2xl font-bold text-center"> RECENT POSTS </p>
 						{RecentPost.map((item) => (
@@ -27,21 +31,22 @@ export default function Blog() {
 					</div>
 					<div className="flex flex-col justify-center p-4 border border-gray-300 gap-3 rounded-md">
 						<p className="text-lg md:text-2xl font-bold text-center"> POPULAR POSTS </p>
-						<div className="flex p-3 gap-2 bg-yellow-400 max-h-20">
+						<div className="flex p-3 gap-2 max-h-20">
 							<img className="h-full" src="https://s3-alpha-sig.figma.com/img/1435/4125/95424069a64e2a599ea4525248275b32?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LPFf7m2W0HahxhG1RoZeZhGBJdcgDv36sE1YdFNCpIFyE~lD2oDdz6-ctejaV7Gm8sG4~BZNzpFB6cy6bs5K7g3rzrF1Ys4AV6~3ewVvoUza8HjJFqDV-aK8dZpkwL3ueDm2wY-RqBgORMqFUP~D37JdP~3b0kq2XrZ-i4xvblb5DqGuyJn3W6MX9pn9hT7SNMewPCLY62YgEVm5Z8xtOo1g~B6OGA80~ZUtv0dkMl9tt3f3C7yaA5ENyJTlXzC5chtUcKcUWN~JLuzDPdbLXf1D0WELhfPUn3iNEfJ7XZ-kB5VJ7LXPDIchXcs0jwiKudWEgFkqXaCxVmkqWBzXrg__" />
-							<p className="py-4 bg-pink-300 w-full align-center flex font-bold">This is the most popular blog post</p>
+							<p className="py-4  w-full align-center flex font-bold">This is the most popular blog post</p>
 						</div>
-						<div className="flex p-3 gap-2 bg-yellow-400 max-h-20">
+						<div className="flex p-3 gap-2  max-h-20">
 							<img className="h-full" src="https://s3-alpha-sig.figma.com/img/1435/4125/95424069a64e2a599ea4525248275b32?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LPFf7m2W0HahxhG1RoZeZhGBJdcgDv36sE1YdFNCpIFyE~lD2oDdz6-ctejaV7Gm8sG4~BZNzpFB6cy6bs5K7g3rzrF1Ys4AV6~3ewVvoUza8HjJFqDV-aK8dZpkwL3ueDm2wY-RqBgORMqFUP~D37JdP~3b0kq2XrZ-i4xvblb5DqGuyJn3W6MX9pn9hT7SNMewPCLY62YgEVm5Z8xtOo1g~B6OGA80~ZUtv0dkMl9tt3f3C7yaA5ENyJTlXzC5chtUcKcUWN~JLuzDPdbLXf1D0WELhfPUn3iNEfJ7XZ-kB5VJ7LXPDIchXcs0jwiKudWEgFkqXaCxVmkqWBzXrg__" />
-							<p className="py-4 bg-pink-300 w-full align-center flex font-bold">This is the most popular blog post</p>
+							<p className="py-4 w-full align-center flex font-bold">This is the most popular blog post</p>
 						</div>
-						<div className="flex p-3 gap-2 bg-yellow-400 max-h-20">
+						<div className="flex p-3 gap-2  max-h-20">
 							<img className="h-full" src="https://s3-alpha-sig.figma.com/img/1435/4125/95424069a64e2a599ea4525248275b32?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LPFf7m2W0HahxhG1RoZeZhGBJdcgDv36sE1YdFNCpIFyE~lD2oDdz6-ctejaV7Gm8sG4~BZNzpFB6cy6bs5K7g3rzrF1Ys4AV6~3ewVvoUza8HjJFqDV-aK8dZpkwL3ueDm2wY-RqBgORMqFUP~D37JdP~3b0kq2XrZ-i4xvblb5DqGuyJn3W6MX9pn9hT7SNMewPCLY62YgEVm5Z8xtOo1g~B6OGA80~ZUtv0dkMl9tt3f3C7yaA5ENyJTlXzC5chtUcKcUWN~JLuzDPdbLXf1D0WELhfPUn3iNEfJ7XZ-kB5VJ7LXPDIchXcs0jwiKudWEgFkqXaCxVmkqWBzXrg__" />
-							<p className="py-4 bg-pink-300 w-full align-center flex font-bold">This is the most popular blog post</p>
+							<p className="py-4  w-full align-center flex font-bold">This is the most popular blog post</p>
 						</div>
 					</div>
 				</div>
-				<div className="bg-purple-300 w-full md:w-2/3 p-6 border">
+				<div className="w-full md:w-2/3 p-6 border">
+
 					<div className="w-full max-w-7xl mx-auto">
 						<div className="relative w-full px-4 sm:px-6 lg:px-8">
 							<h1 className="text-lg lg:text-xl font-bold mb-6">
@@ -75,12 +80,13 @@ export default function Blog() {
 					</div>
 				</div>
 			</div>
-			<div className="flex gap-4 bg-purple-200 p-4 m-5">
-				<div className="w-1/3 border bg-pink-200">
-					<p>1</p>
+			<div className="flex flex-col md:flex-row gap-4 p-4 md:mt-5">
+				<div className="md:w-1/3 border min-h-40 bg-white">
+					<p className="p-3 text-2xl text-center">Blog 3</p>
 				</div>
-				<div className="w-1/3 bg-white border"></div>
-				<div className="w-1/3 bg-white border"></div>
+				<div className="min-h-40 md:w-1/3 bg-white border text-center"> <p className="p-3 text-2xl text-center">Blog 3</p>
+				</div>
+				<div className="min-h-40 md:w-1/3 bg-white border text-center">  <p className="p-3 text-2xl text-center">Blog 3</p></div>
 			</div>
 		</>
 	);

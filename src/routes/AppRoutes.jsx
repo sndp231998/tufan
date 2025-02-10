@@ -11,6 +11,8 @@ import LoginPage from "../pages/auth/LoginPage"
 import RegisterPage from "../pages/auth/RegisterPage"
 import OtpPage from "../pages/auth/OtpPage"
 import PasswordPage from "../pages/auth/PasswordPage"
+import RideShare from "../pages/RideShare"
+import BusTicket from "../pages/BusTicket"
 
 export default function AppRoutes() {
 	return (
@@ -27,6 +29,8 @@ export default function AppRoutes() {
 					<Route path={PATHS.REGISTER} element={<RegisterPage />} />
 					<Route path={PATHS.OTPPAGE} element={<OtpPage />} />
 					<Route path={PATHS.PASSWORDPAGE} element={<PasswordPage />} />
+					<Route path={PATHS.RIDESHARE} element={<RideShare />} />
+					<Route path={PATHS.BUSTICKET} element={<BusTicket />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

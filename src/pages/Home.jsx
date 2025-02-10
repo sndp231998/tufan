@@ -1,6 +1,9 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ThemeContext } from "../themeContext";
 import Misson from "../components/Misson";
+import tufanLogo from "../assets/tufanLogo.png";
+import tufanBanner from "../assets/toofanBanner.png";
+import BannerGif from "../assets/Home.gif"
 
 export default function Home() {
 	const { theme, toggleTheme } = useContext(ThemeContext);
@@ -11,6 +14,7 @@ export default function Home() {
 		{ id: 3, text: "Safe and Reliable Travel Experience" },
 		{ id: 4, text: "Cutting-Edge Technology Integration" },
 	]
+	const { language, setLanguage } = useState('Eng');
 	return (
 		<>
 			<div className="flex flex-col flex-initial max-w-7xl justify-center mx-auto">
@@ -36,7 +40,7 @@ export default function Home() {
 						<img
 							alt="Banner Image"
 							className="w-full h-full"
-							src="https://s3-alpha-sig.figma.com/img/f692/b26e/313797b2635cb4e1f4a88134873169c9?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UYH-5~GQ4xuYpLbKZV9nz5gN4NJ0nFDuRf45wet~qYalvRQLiXdOU9fgQyLuUwPEcBlfgYSu~bsUblKV2vE6x4e9~HNaa~Xj5wC~LFTg2-y~91ypsrqAdy52JblnHJsgX~voDs0CxJF5f9-gZ2IVajGDWNLyJHQKSizdFM4Qqv51DEbwuNLyeXN15a~YkFJFD465ztK7CRPUiQgeAu6to19equof0E2bjiiVegF2BQl8eZSNi92kE4393hP~8MyPNKIIUQdDkhEwcL1JUZRICLAB9Cy-5AUJscjK7w4WdBm~dIEGKiVfQlMLjoPPalXHlvmJwMS7D3KXyr9RdZcwEg__"
+							src={tufanBanner}
 						/>
 					</div>
 				</div>
@@ -44,7 +48,7 @@ export default function Home() {
 
 				{/* Uselsee Container */}
 				<div className="md:p-6 p-3">
-					<img className="w-full border-[#DCDCDC] border rounded-lg bg-white dark:bg-background " src="https://s3-alpha-sig.figma.com/img/aa97/5339/bfd01ded4de40ccb5522aadca48800b6?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mEisHfq5uC4tg-OCkTJlqjOIUpRTrEUTtCwHuhRDalQLg3oLp34mNzYs6EDi4gcA8v9R-XJ7kn~Rq6Vl0heQcEZsfSMwna0Mzf1GUlP7oV6ViuxnVyGHvKLFA~MmozppLw0t69UivAAq5cSuha8jKUYUwBHiom88yrKI-p-AjKKuU3QoK6A0fmc7WfAwUN9ttfz~bDA0yb3WhitzAygYwMgyzxL1W3ZHo4C92owax9vpgHchK6zOcdwgE~3Anzbcz4c9qKQ6JT8APUlCYQh0C6zA~BQe5MiqIBzMAbu~42FAml0tJoBj0gc80yvQvoRoiamlcuAjst6xsH8k~h2Pow__" />
+					<img className="w-full border-[#DCDCDC] border rounded-lg bg-white dark:bg-background " src={BannerGif} />
 				</div>
 
 				{/* Features */}
@@ -65,7 +69,7 @@ export default function Home() {
 						<img
 							alt="Banner Image"
 							className=""
-							src="https://s3-alpha-sig.figma.com/img/f692/b26e/313797b2635cb4e1f4a88134873169c9?Expires=1738540800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UYH-5~GQ4xuYpLbKZV9nz5gN4NJ0nFDuRf45wet~qYalvRQLiXdOU9fgQyLuUwPEcBlfgYSu~bsUblKV2vE6x4e9~HNaa~Xj5wC~LFTg2-y~91ypsrqAdy52JblnHJsgX~voDs0CxJF5f9-gZ2IVajGDWNLyJHQKSizdFM4Qqv51DEbwuNLyeXN15a~YkFJFD465ztK7CRPUiQgeAu6to19equof0E2bjiiVegF2BQl8eZSNi92kE4393hP~8MyPNKIIUQdDkhEwcL1JUZRICLAB9Cy-5AUJscjK7w4WdBm~dIEGKiVfQlMLjoPPalXHlvmJwMS7D3KXyr9RdZcwEg__"
+							src={tufanBanner}
 						/>
 					</div>
 				</div>
