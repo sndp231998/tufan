@@ -1,11 +1,10 @@
 import React, { createContext, useState, useEffect } from "react";
 
 export const ThemeContext = createContext();
+export const LanguageContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") || "light"
-  );
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   useEffect(() => {
     const root = window.document.documentElement;
@@ -25,5 +24,18 @@ export const ThemeProvider = ({ children }) => {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
+  );
+};
+
+export const LanguageProvider = ({ children }) => {
+  const [language, setLanguage] = useState("eng");
+
+  const changeLanguage = (lan) => {
+    setLanguage(lan);
+  };
+  return (
+    <LanguageContext.Provider value={{ language, changeLanguage }}>
+      {children}
+    </LanguageContext.Provider>
   );
 };
