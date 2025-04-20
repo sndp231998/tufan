@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { PATHS } from "../constants/path";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { LanguageContext, ThemeContext } from "../themeContext";
 import Logo from "../assets/tufanLogo.png";
+import { useLocation } from "react-router-dom";
 
 const ChevronDownIcon = () => (
   <svg
@@ -117,6 +118,17 @@ export default function Navbar() {
     setOpen(!open);
   };
 
+  const location = useLocation();
+
+  // This effect will run whenever the route/location changes
+  useEffect(() => {
+    // Reset all dropdown states when the route changes
+    setOpen(false);
+    setOpenServices(false);
+    setOpenLanguage(false);
+    // Reset any other menu states here...
+  }, [location.pathname]);
+
   return (
     <nav className="fixed top-0 left-0 z-50 w-full py-6 px-6 bg-white dark:bg-[#262728] shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -142,7 +154,7 @@ export default function Navbar() {
                 <span>Services</span>
                 <ChevronDownIcon />
                 {openServices && (
-                  <div className="flex flex-col gap-2 absolute w-max bg-background shadow mt-20 p-1.5 px-5 border rounded-lg">
+                  <div className="flex flex-col gap-2 absolute w-max bg-background shadow mt-20 p-1.5 px-5 border rounded-lg cursor-pointer">
                     <Link to={PATHS.RIDESHARE}>
                       <span className="block text-sm text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200">
                         RideShare
@@ -184,7 +196,7 @@ export default function Navbar() {
                 <span>Language</span>
                 <ChevronDownIcon />
                 {openLanguague && (
-                  <div className="flex flex-col gap-2 absolute w-max bg-background shadow mt-20 p-1.5 px-5 border rounded-lg">
+                  <div className="flex gap-2 absolute w-max bg-background shadow mt-20 p-1.5 px-5 border rounded-lg flex-col ">
                     <span
                       onClick={() => changeLanguage("eng")}
                       className="block text-sm text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200"
@@ -234,45 +246,69 @@ export default function Navbar() {
                   Home
                 </span>
               </Link>
-
               <button
-                className="flex items-center justify-between text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200"
+                className="flex flex-col items-start text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200"
                 onClick={() => setOpenServices(!openServices)}
               >
-                <span>Services</span>
-                <ChevronDownIcon
-                  className={`transition-transform duration-200 ${
-                    openServices ? "rotate-180" : ""
-                  }`}
-                />
+                <div className="flex flex-row items-center space-x-2 w-full">
+                  <span>Services</span>
+                  <ChevronDownIcon
+                    className={`transition-transform duration-200 ${
+                      openServices ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
                 {openServices && (
-                  <span className="text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200 right-3">
-                    RideShare
-                  </span>
+                  <Link to={PATHS.RIDESHARE}>
+                    <p className="w-full mt-2 p-1.5 px-5 text-start text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200">
+                      RideShare
+                    </p>
+                  </Link>
                 )}
               </button>
-
               <Link to={PATHS.BLOG} onClick={() => setOpen(false)}>
                 <span className="block text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200">
                   Blog
                 </span>
               </Link>
-
               <Link to={PATHS.FAQ} onClick={() => setOpen(false)}>
                 <span className="block text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200">
                   FAQ
                 </span>
               </Link>
-
               <Link to={PATHS.CONTACT} onClick={() => setOpen(false)}>
                 <span className="block text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200">
                   Contact Us
                 </span>
               </Link>
-
-              <button className="flex items-center justify-between text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200">
-                <span>Language</span>
-                <ChevronDownIcon />
+              <button
+                className="flex flex-col items-start text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200"
+                onClick={() => setOpenLanguage(!openLanguague)}
+              >
+                <div className="flex flex-row items-center space-x-2 w-full">
+                  <span>Services</span>
+                  <ChevronDownIcon
+                    className={`transition-transform duration-200 ${
+                      openServices ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
+                {openLanguague && (
+                  <div className="flex gap-2 w-full p-1.5 px-5 flex-col text-start cursor-pointer">
+                    <span
+                      onClick={() => changeLanguage("eng")}
+                      className="block text-sm text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200"
+                    >
+                      English
+                    </span>{" "}
+                    <span
+                      onClick={() => changeLanguage("nep")}
+                      className="block text-sm text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200"
+                    >
+                      Nepali
+                    </span>{" "}
+                  </div>
+                )}
               </button>
 
               <Link to={PATHS.LOGIN} onClick={() => setOpen(false)}>
@@ -280,7 +316,6 @@ export default function Navbar() {
                   Login
                 </button>
               </Link>
-
               <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
             </div>
           </div>

@@ -28,7 +28,7 @@ export default function Blog() {
             </p>
             {RecentPost.map((item) => (
               <div
-                className="flex flex-col p-3 bg-background border bg-white dark:bg-black rounded-lg"
+                className="flex flex-col p-3 bg-background border bg-white dark:bg-[#222222] rounded-lg"
                 key={item.id}
               >
                 <p className="text-md md:text-lg font-bold">{item.title}</p>
@@ -41,19 +41,19 @@ export default function Blog() {
               {" "}
               POPULAR POSTS{" "}
             </p>
-            <div className="flex p-3 gap-2 max-h-20 border bg-white dark:bg-black rounded-lg">
+            <div className="flex p-3 gap-2 max-h-20 border bg-white dark:bg-[#222222] rounded-lg">
               <img className="h-full" src={blogImage} />
               <p className="py-4  w-full align-center flex font-bold">
                 This is the most popular blog post
               </p>
             </div>
-            <div className="flex p-3 gap-2  max-h-20 border bg-white dark:bg-black rounded-lg">
+            <div className="flex p-3 gap-2  max-h-20 border bg-white dark:bg-[#222222] rounded-lg">
               <img className="h-full" src={blogImage} />
               <p className="py-4 w-full align-center flex font-bold">
                 This is the most popular blog post
               </p>
             </div>
-            <div className="flex p-3 gap-2  max-h-20 border bg-white dark:bg-black rounded-lg">
+            <div className="flex p-3 gap-2  max-h-20 border bg-white  dark:bg-[#222222] rounded-lg">
               <img className="h-full" src={blogImage} />
               <p className="py-4  w-full align-center flex font-bold">
                 This is the most popular blog post
