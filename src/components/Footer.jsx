@@ -139,8 +139,12 @@ const Footer = () => {
           <div className="flex-1 p-3 space-y-1">
             <h1 className="w-full text-titleColor font-bold">Our Services </h1>
             <ol>
-              <li>Bus Ticketing</li>
-              <li>Ride Sharing</li>
+              <Link to={PATHS.BUSTICKET}>
+                <li>Bus Ticketing</li>{" "}
+              </Link>
+              <Link to={PATHS.RIDESHARE}>
+                <li>Ride Sharing</li>{" "}
+              </Link>
             </ol>
           </div>
           <div className="flex-1 p-3 space-y-1">
@@ -170,7 +174,9 @@ const Footer = () => {
             Follow us on{" "}
           </h1>
           <div className="flex flex-wrap gap-3 pt-2">
-            <FacebookIcon />
+            <a href="https://www.facebook.com/share/16CdnTT54e/">
+              <FacebookIcon />
+            </a>
             <LinkedInIcon />
             <YoutubeIcon />
             <TikTokIcon />

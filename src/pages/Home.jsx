@@ -2,7 +2,10 @@ import { useContext, useEffect, useState } from "react";
 import { LanguageContext, ThemeContext } from "../themeContext";
 import Misson from "../components/Misson";
 import tufanLogo from "../assets/tufanLogo.png";
+import tufanBikes from "../assets/tufanbikes.jpeg";
+import tufanBikesWhite from "../assets/tufanbikeswhite.jpeg";
 import tufanBanner from "../assets/toofanBanner.png";
+import BannerGifHome from "../assets/tufanHome.mp4";
 import BannerGif from "../assets/home.gif";
 
 export default function Home() {
@@ -71,7 +74,7 @@ export default function Home() {
             <img
               alt="Banner Image"
               className="w-full h-full"
-              src={tufanBanner}
+              src={tufanBikes}
             />
           </div>
         </div>
@@ -106,7 +109,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-1 m-3 justify-center align-center p-3">
-            <img alt="Banner Image" className="" src={tufanBanner} />
+            <img alt="Banner Image" className="" src={tufanBikes} />
           </div>
         </div>
         {/* Feature End */}
