@@ -1,6 +1,7 @@
 import BannerImage from "../assets/rideBanner.png";
 import Person from "../assets/ridePerson.jpeg";
 import BannerGif from "../assets/home.gif";
+import NewBannerGif from "../assets/homepage.gif";
 
 export default function RideShare() {
   return (
@@ -61,7 +62,7 @@ export default function RideShare() {
         <div className="md:p-6 p-3">
           <img
             className="w-full border-[#DCDCDC] border rounded-lg bg-white dark:bg-background"
-            src={BannerGif}
+            src={NewBannerGif}
           />
         </div>
         <div className="flex gap-3 p-8">
