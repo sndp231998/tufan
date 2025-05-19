@@ -7,6 +7,7 @@ import tufanBikesWhite from "../assets/tufanbikeswhite.jpeg";
 import tufanBanner from "../assets/toofanBanner.png";
 import BannerGifHome from "../assets/tufanHome.mp4";
 import BannerGif from "../assets/home.gif";
+import NewBannerGif from "../assets/homepage.gif";
 
 export default function Home() {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -84,7 +85,7 @@ export default function Home() {
         <div className="md:p-6 p-3">
           <img
             className="w-full border-[#DCDCDC] border rounded-lg bg-white dark:bg-background "
-            src={BannerGif}
+            src={NewBannerGif}
           />
         </div>
 

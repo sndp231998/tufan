@@ -192,7 +192,7 @@ const Footer = () => {
           </p>
           <p className="text-center text-xs">
             {" "}
-            &copy; Tufan All rights reserved.
+            &copy; Tufan All rights reserved | Powerd by: A1 IT Innovation
           </p>
         </div>
       </div>
