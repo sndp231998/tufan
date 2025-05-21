@@ -2,6 +2,7 @@ import BannerImage from "../assets/rideBanner.png";
 import Person from "../assets/ridePerson.jpeg";
 import BannerGif from "../assets/home.gif";
 import NewBannerGif from "../assets/homepage.gif";
+import PhoneImage from "../assets/mobileImage.jpeg";
 
 export default function RideShare() {
   return (
@@ -52,7 +53,7 @@ export default function RideShare() {
             <img
               alt="Banner Image"
               className="w-full h-full"
-              src={BannerImage}
+              src={PhoneImage}
             />
           </div>
         </div>

@@ -3,6 +3,7 @@ import Person from "../assets/ridePerson.jpeg";
 import BannerGif from "../assets/home.gif";
 import BusImage from "../assets/busImage.png";
 import NewBannerGif from "../assets/homepage.gif";
+import NewMobileImage from "../assets/mobileImageone.jpeg";
 
 export default function BusTicket() {
   return (
@@ -53,7 +54,7 @@ export default function BusTicket() {
             <img
               alt="Banner Image"
               className="w-full h-full"
-              src={BannerImage}
+              src={NewMobileImage}
             />
           </div>
         </div>
