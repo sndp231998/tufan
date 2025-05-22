@@ -130,11 +130,11 @@ export default function Contact() {
 
           <div className="flex gap-8 p-4">
             <p>
-              <mailIcon /> example@gmail.com
+              <mailIcon /> sandipchapagain797@gmail.com
             </p>
             <p>
               <phoneIcon />
-              Ixample@gmail.com
+              981-6032025
             </p>
           </div>
         </div>
