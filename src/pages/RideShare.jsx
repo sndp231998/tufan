@@ -3,6 +3,7 @@ import Person from "../assets/ridePerson.jpeg";
 import BannerGif from "../assets/home.gif";
 import NewBannerGif from "../assets/homepage.gif";
 import PhoneImage from "../assets/mobileImage.jpeg";
+import BusImage from "../assets/busImageOne.jpeg";
 
 export default function RideShare() {
   return (
@@ -35,7 +36,7 @@ export default function RideShare() {
               <div className="flex justify-center items-center flex-col gap-2">
                 <img
                   className="rounded-full w-36 h-36"
-                  src={Person}
+                  src={BusImage}
                   alt="A person with phone"
                 />
                 <button className="p-5 bg-titleColor rounded-xl text-white font-bold">

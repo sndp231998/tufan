@@ -4,6 +4,7 @@ import BannerGif from "../assets/home.gif";
 import BusImage from "../assets/busImage.png";
 import NewBannerGif from "../assets/homepage.gif";
 import NewMobileImage from "../assets/mobileImageone.jpeg";
+import CarImage from "../assets/carImage.jpeg";
 
 export default function BusTicket() {
   return (
@@ -36,7 +37,7 @@ export default function BusTicket() {
               <div className="flex justify-center items-center flex-col gap-2">
                 <img
                   className="rounded-full w-36 h-36"
-                  src={BusImage}
+                  src={CarImage}
                   alt="A person with phone"
                 />
                 <button className="p-5 bg-titleColor rounded-xl text-white font-bold">

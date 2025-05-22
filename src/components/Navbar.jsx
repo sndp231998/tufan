@@ -217,11 +217,11 @@ export default function Navbar() {
 
           {/* Action Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Link to={PATHS.LOGIN}>
+            {/* <Link to={PATHS.LOGIN}>
               <button className="px-4 py-1 rounded-lg bg-[#E85C40] text-white hover:bg-[#d54e35] transition-colors duration-200 font-bold">
                 Login
               </button>
-            </Link>
+            </Link> */}
             <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
           </div>
 
@@ -311,11 +311,11 @@ export default function Navbar() {
                 )}
               </button>
 
-              <Link to={PATHS.LOGIN} onClick={() => setOpen(false)}>
-                <button className="px-6 py-2 rounded-lg bg-[#E85C40] text-white hover:bg-[#d54e35] transition-colors duration-200">
-                  Login
-                </button>
-              </Link>
+              {/*<Link to={PATHS.LOGIN} onClick={() => setOpen(false)}>
+               <button className="px-6 py-2 rounded-lg bg-[#E85C40] text-white hover:bg-[#d54e35] transition-colors duration-200">
+              Login
+              </button>
+               </Link> */}
               <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
             </div>
           </div>
