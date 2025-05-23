@@ -130,11 +130,11 @@ export default function Contact() {
 
           <div className="flex gap-8 p-4">
             <p>
-              <mailIcon /> sandipchapagain797@gmail.com
+              <mailIcon /> info@mytufan.com
             </p>
             <p>
               <phoneIcon />
-              981-6032025
+              +9779767781922
             </p>
           </div>
         </div>

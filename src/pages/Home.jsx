@@ -1,13 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import { LanguageContext, ThemeContext } from "../themeContext";
 import Misson from "../components/Misson";
-import tufanLogo from "../assets/tufanLogo.png";
 import tufanBikes from "../assets/tufanbikes.jpeg";
-import tufanBikesWhite from "../assets/tufanbikeswhite.jpeg";
-import tufanBanner from "../assets/toofanBanner.png";
-import BannerGifHome from "../assets/tufanHome.mp4";
-import BannerGif from "../assets/home.gif";
 import NewBannerGif from "../assets/homepage.gif";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -37,7 +33,20 @@ export default function Home() {
   const { language } = useContext(LanguageContext);
 
   return (
-    <>
+    <> 
+    {/* SEO Start */}
+      <Helmet>
+        <title>Tufan Ride Share | Affordable and Safe Travel</title>
+        <meta
+          name="description"
+          content="Experience hassle-free ride sharing and bus ticketing with Tufan. Safe, reliable, and cost-effective transportation."
+        />
+        <meta
+          name="keywords"
+          content="Tufan, Ride Share, Bus Ticket, Travel Nepal, Safe Travel"
+        />
+      </Helmet>
+      {/* SEO End */}
       <div className="flex flex-col flex-initial max-w-7xl justify-center mx-auto">
         {/* Company description and banner image  */}
         <div className="md:p-3 flex flex-col-reverse flex-wrap md:flex-row bg-background dark:bg-background">
@@ -93,11 +102,7 @@ export default function Home() {
         <div className="md:p-3 flex flex-col flex-wrap md:flex-row bg-background dark:bg-background">
           <div className="flex-1 border md:m-3 p-5 border-white rounded-lg bg-white dark:bg-[#262728] dark:border-[#262728]">
             <h2 className="text-titleColor text-lg font-bold">
-              {language === "eng" ? (
-                <>Our Features</>
-              ) : (
-                <>हाम्रा विशेषताहरू</>
-              )}{" "}
+              {language === "eng" ? <>Our Features</> : <>हाम्रा विशेषताहरू</>}{" "}
             </h2>
             <div className="p-3 ml-5 font-light leading-[44.05px]">
               <ol className="list-decimal">
