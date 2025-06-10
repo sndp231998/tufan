@@ -1,164 +1,71 @@
 export default function Policy() {
   return (
-    <div className="max-w-3xl mx-auto bg-background p-8 my-10 rounded-lg shadow-md">
-      <h1 className="text-3xl font-bold text-center mb-6">
-        Terms and Conditions for Tufan
-      </h1>
-      <p className="text-sm mb-4">
-        <strong>Effective Date:</strong> June 1st, 2025
-      </p>
-      <p className="mb-6">
-        By registering and logging in to the Tufan app or website, you agree to
-        comply with these Terms and Conditions.
-      </p>
+    <div class="max-w-3xl mx-auto bg-white p-8 my-10 rounded-lg shadow-md">
+        <h1 class="text-3xl font-bold text-center mb-6">Privacy Policy for Tufan</h1>
+        <p class="text-sm mb-4"><strong>Effective Date:</strong> June 1st, 2025</p>
+        <p class="mb-6">At Tufan, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and protect your personal data when you use our ride-sharing platform, Tufan. By using our app, you agree to the practices outlined in this Privacy Policy.</p>
 
-      <h2 className="text-xl font-semibold mb-2">1. Eligibility</h2>
-      <p className="mb-4">
-        The minimum age requirement to use Tufan is 16 years.
-      </p>
-      <p className="mb-6">
-        To register as a rider, you must be at least 18 years old, have a valid
-        driver’s license, and own a registered vehicle with cleared tax.
-      </p>
+        <h2 class="text-xl font-semibold mb-2">1. Information We Collect</h2>
+        <p class="mb-2"><strong>Personal Information</strong></p>
+        <ul class="list-disc list-inside mb-4">
+            <li><strong>User Registration:</strong> We collect your name, address, contact number, and Gmail.</li>
+            <li><strong>Driver/Rider Registration:</strong> We collect vehicle information (brand, manufacture year, registration number), driving license details, and pictures of both.</li>
+        </ul>
+        <p class="mb-2"><strong>Location Data</strong></p>
+        <p class="mb-4">We request your consent to access your location data, which is essential for the operation of our service.</p>
+        <p class="mb-2"><strong>Payment Information</strong></p>
+        <p class="mb-4">We collect payment details through a secure, third-party payment gateway for processing transactions.</p>
+        <p class="mb-2"><strong>Data Storage</strong></p>
+        <p class="mb-6">All data is securely stored on our encrypted servers to protect your information from unauthorized access.</p>
 
-      <h2 className="text-xl font-semibold mb-2">2. User Responsibilities</h2>
-      <p className="mb-2">
-        <strong>Accurate Information:</strong> Users must provide accurate and
-        up-to-date information during registration.
-      </p>
-      <p className="mb-2">
-        <strong>Compliance with Laws:</strong> Users must adhere to all traffic
-        laws and vehicle standards while using the app.
-      </p>
-      <p className="mb-2">
-        <strong>Prohibited Activities:</strong>
-      </p>
-      <ul className="list-disc list-inside mb-6">
-        <li>Using the app for illegal purposes.</li>
-        <li>Asking ride requesters for personal contact information.</li>
-        <li>Harassing other users (drivers or passengers).</li>
-        <li>
-          Engaging in any other activities that violate the terms of service or
-          the safety of others.
-        </li>
-      </ul>
+        <h2 class="text-xl font-semibold mb-2">2. How We Use Your Information</h2>
+        <ul class="list-disc list-inside mb-6">
+            <li><strong>Regular Updates & Security:</strong> To send updates and security patches to enhance your experience.</li>
+            <li><strong>KYC Verification:</strong> For identity verification during the registration process.</li>
+            <li><strong>Legal Compliance:</strong> To comply with legal requirements and provide necessary data to authorities when required.</li>
+            <li><strong>Emergency Communication:</strong> To communicate with relevant authorities in case of an emergency.</li>
+        </ul>
 
-      <h2 className="text-xl font-semibold mb-2">
-        3. Account Registration and Security
-      </h2>
-      <p className="mb-2">
-        <strong>Accurate Information:</strong> Users must provide accurate and
-        complete information during account registration.
-      </p>
-      <p className="mb-2">
-        <strong>Account Security:</strong> Users are responsible for maintaining
-        the confidentiality of their ID, password, and OTP.
-      </p>
-      <p className="mb-6">
-        <strong>Password Recovery:</strong> If you forget your password, you can
-        use the Forgot Password option on the login page to reset it.
-      </p>
+        <h2 class="text-xl font-semibold mb-2">3. Data Sharing and Disclosure</h2>
+        <ul class="list-disc list-inside mb-6">
+            <li><strong>Third-Party Service Providers:</strong> We use a secure, leading third-party payment gateway for processing payments.</li>
+            <li><strong>Legal Requirements:</strong> In the event of a legal inquiry or when required by authorities, we may disclose your data to comply with legal obligations.</li>
+        </ul>
 
-      <h2 className="text-xl font-semibold mb-2">4. Ride/Service Use</h2>
-      <p className="mb-2">
-        <strong>Compliance with Traffic Laws:</strong> Both drivers and
-        passengers are expected to follow traffic laws and maintain the dignity
-        and respect of one another during the ride.
-      </p>
-      <p className="mb-2">
-        <strong>Booking and Payment:</strong>
-      </p>
-      <ul className="list-disc list-inside mb-6">
-        <li>
-          Riders can load Tufan credits using the available payment gateway
-          within the app.
-        </li>
-        <li>
-          All rides must be booked through the app, and payments will be
-          processed securely.
-        </li>
-      </ul>
+        <h2 class="text-xl font-semibold mb-2">4. Data Retention</h2>
+        <ul class="list-disc list-inside mb-6">
+            <li>We retain user data for as long as the account remains active.</li>
+            <li><strong>Payment and Transaction History:</strong> These records are stored for 90 days.</li>
+            <li><strong>Account Deletion:</strong> If you request account deletion, your data will be permanently removed from our records.</li>
+        </ul>
 
-      <h2 className="text-xl font-semibold mb-2">5. Payment and Fees</h2>
-      <p className="mb-6">
-        There are no additional charges for rides, cancellations, or services
-        beyond the fare for the ride itself.
-      </p>
+        <h2 class="text-xl font-semibold mb-2">5. Your Rights and Control</h2>
+        <ul class="list-disc list-inside mb-6">
+            <li><strong>View & Update:</strong> You can view and update your personal information through the settings section of the app.</li>
+            <li><strong>Account Deletion:</strong> You can request account deletion, and we will remove your data from our records.</li>
+        </ul>
 
-      <h2 className="text-xl font-semibold mb-2">
-        6. Termination and Suspension
-      </h2>
-      <p className="mb-2">
-        <strong>Suspension:</strong> Tufan may suspend a user’s account if they:
-      </p>
-      <ul className="list-disc list-inside mb-4">
-        <li>Violate the Terms and Conditions or rules of Tufan.</li>
-        <li>
-          Engage in harassment or misbehavior towards other users (drivers or
-          passengers).
-        </li>
-        <li>Receive frequent complaints about their conduct.</li>
-      </ul>
-      <p className="mb-6">
-        <strong>Termination:</strong> If suspension is not effective, Tufan may
-        proceed with permanent termination of the user's account.
-      </p>
+        <h2 class="text-xl font-semibold mb-2">6. Cookies and Tracking Technologies</h2>
+        <p class="mb-6">We do not track user behavior. However, we retain records of user preferences based on past history with Tufan.</p>
 
-      <h2 className="text-xl font-semibold mb-2">7. Limitation of Liability</h2>
-      <p className="mb-2">
-        <strong>Accidents and Damages:</strong> Tufan provides insurance
-        coverage for road accidents and damage related to the ride. We are not
-        responsible for any other incidents or damages outside of this coverage.
-      </p>
-      <p className="mb-6">
-        <strong>System Failure:</strong> In case of system failure, Tufan will
-        ensure that all transactions and activities during that time are
-        securely tracked using a remote server.
-      </p>
+        <h2 class="text-xl font-semibold mb-2">7. Data Security</h2>
+        <p class="mb-6">We use encryption technology to protect your data. This ensures that your information is secure and cannot be accessed by unauthorized individuals.</p>
 
-      <h2 className="text-xl font-semibold mb-2">8. Intellectual Property</h2>
-      <p className="mb-2">
-        <strong>Ownership:</strong> All intellectual property, including the
-        Tufan app, logo, content, and software, is the sole property of Tufan.
-      </p>
-      <p className="mb-2">
-        <strong>Restrictions:</strong> Users are prohibited from copying,
-        reverse-engineering, or attempting to replicate any part of Tufan’s
-        intellectual property.
-      </p>
-      <p className="mb-6">
-        <strong>Legal Action:</strong> Any violation of intellectual property
-        rights may lead to legal actions under applicable Intellectual Property
-        Laws.
-      </p>
+        <h2 class="text-xl font-semibold mb-2">8. International Data Transfers</h2>
+        <p class="mb-6">Tufan does not transfer your data across borders.</p>
 
-      <h2 className="text-xl font-semibold mb-2">9. Dispute Resolution</h2>
-      <p className="mb-6">
-        Any disputes arising from the use of the Tufan app will be handled by
-        the Supreme Court of Nepal under the jurisdiction of Nepalese law.
-      </p>
+        <h2 class="text-xl font-semibold mb-2">9. Children’s Privacy</h2>
+        <p class="mb-6">Tufan is intended for users aged 16 and above. We do not knowingly collect data from children under this age.</p>
 
-      <h2 className="text-xl font-semibold mb-2">10. Changes to Terms</h2>
-      <p className="mb-6">
-        Tufan reserves the right to update or modify these Terms and Conditions
-        as needed. Users will be notified of any changes via in-app
-        notifications and email. It is the user's responsibility to review the
-        updated terms.
-      </p>
+        <h2 class="text-xl font-semibold mb-2">10. Changes to This Privacy Policy</h2>
+        <p class="mb-6">We may update this Privacy Policy from time to time. If there are any significant changes, we will notify you at least 15 days prior to the changes via in-app notifications.</p>
 
-      <h2 className="text-xl font-semibold mb-2">11. Contact Information</h2>
-      <p className="mb-2">
-        If you have any questions or concerns about these Terms and Conditions
-        or your account, you can contact us using the following methods:
-      </p>
-      <ul className="list-disc list-inside mb-2">
-        <li>
-          <strong>Email:</strong> info@mytufan.com
-        </li>
-        <li>
-          <strong>Phone:</strong> +977 976-7781922
-        </li>
-      </ul>
+        <h2 class="text-xl font-semibold mb-2">11. Contact Us</h2>
+        <p class="mb-2">If you have any questions or concerns about this Privacy Policy or how we handle your data, you can contact us using the following methods:</p>
+        <ul class="list-disc list-inside mb-2">
+            <li><strong>Email:</strong> info@mytufan.com</li>
+            <li><strong>Phone:</strong> +977 976-7781922</li>
+        </ul>
     </div>
   );
 }

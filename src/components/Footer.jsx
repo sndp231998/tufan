@@ -164,7 +164,9 @@ const Footer = () => {
               <Link to={PATHS.FAQ}>
                 <li>FAQ</li>
               </Link>
+              <Link to={PATHS.TC}>
               <li>T&C</li>
+              </Link>
               <Link to={PATHS.PRIVACYPOLICY}>
                 <li>Privacy Policy</li>
               </Link>

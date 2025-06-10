@@ -13,4 +13,5 @@ export const PATHS = {
   RIDESHARE: "/rideshare",
   BUSTICKET: "/busticket",
   PRIVACYPOLICY: "/policy",
+  TC: "/terms-and-conditions",
 };
