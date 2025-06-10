@@ -155,12 +155,12 @@ export default function Navbar() {
                 <ChevronDownIcon />
                 {openServices && (
                   <div className="flex flex-col gap-2 absolute w-max bg-background shadow mt-20 p-1.5 px-5 border rounded-lg cursor-pointer">
-                    <Link to={PATHS.BUSTICKET}>
+                    <Link to={PATHS.RIDESHARE}>
                       <span className="block text-sm text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200">
                         RideShare
                       </span>
                     </Link>{" "}
-                    <Link to={PATHS.RIDESHARE}>
+                    <Link to={PATHS.BUSTICKET}>
                       <span className="block text-sm text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200">
                         Bust Ticketing
                       </span>{" "}

@@ -10,7 +10,7 @@ export const PATHS = {
   SERVICES: "/services",
   OTPPAGE: "/otppage",
   PASSWORDPAGE: "/passwordpage",
-  RIDESHARE: "/busticket",
-  BUSTICKET: "/rideshare",
+  RIDESHARE: "/rideshare",
+  BUSTICKET: "/busticket",
   PRIVACYPOLICY: "/policy",
 };

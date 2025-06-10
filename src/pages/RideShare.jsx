@@ -40,7 +40,7 @@ export default function RideShare() {
         <div className="md:p-3 flex flex-col-reverse flex-wrap md:flex-row bg-background dark:bg-background">
           <div className="flex flex-col gap-2 flex-1 shadow-sm border md:m-3 p-5 border-white rounded-lg bg-white dark:bg-[#262728] dark:border-[#262728]">
             <h2 className="text-titleColor text-lg font-bold text-center md:text-start">
-              Tufan Bus Ticketing
+              Tufan Ride Sharing
             </h2>
             <div>
               <p className="p2 md:p-3 font-light leading-6 md:leading-[44.05px]">

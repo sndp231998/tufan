@@ -40,11 +40,12 @@ export default function BusTicket() {
         <div className="md:p-3 flex flex-col-reverse flex-wrap md:flex-row bg-background dark:bg-background">
           <div className="flex flex-col gap-2 flex-1 shadow-sm border md:m-3 p-5 border-white rounded-lg bg-white dark:bg-[#262728] dark:border-[#262728]">
             <h2 className="text-titleColor text-lg font-bold text-center md:text-start">
-              {language === "eng" ? "Tufan Ride Ticketing" : "टुफान राइड टिकटिङ"}
+              {language === "eng" ? "Tufan Bus Ticketing" : "टुफान राइड टिकटिङ"}
             </h2>
             <div>
               <p className="p2 md:p-3 font-light leading-6 md:leading-[44.05px]">
-                {language === "eng" ? `Tufan’s Bus Ticketing system provides a seamless and efficient
+                {language === "eng"
+                  ? `Tufan’s Bus Ticketing system provides a seamless and efficient
                 solution for managing long-distance bus routes. By utilizing
                 advanced technology, it allows bus owners to list their buses,
                 manage ticket sales through agents, and streamline ticket
@@ -53,13 +54,20 @@ export default function BusTicket() {
                 commitment to reliability, efficiency, and customer
                 satisfaction, Tufan’s Bus Ticketing transforms the way bus
                 operations are managed, delivering enhanced convenience for both
-                operators and travelers.`: `टुफानको बस टिकटिङ प्रणालीले लामो दुरीका बस रुटहरू व्यवस्थापन गर्न सहज र प्रभावकारी समाधान प्रदान गर्छ। उन्नत प्रविधिको उपयोग गरेर, यसले बस मालिकहरूलाई आफ्ना बसहरू सूचीबद्ध गर्न, एजेन्सीमार्फत टिकट बिक्री व्यवस्थापन गर्न, र टिकट प्रमाणीकरणलाई सहज बनाउँछ। यात्रुहरूले सजिलैसँग सिधै टिकट किन्ने सुविधा पाउँछन्, जसले सहज र झन्झटमुक्त अनुभव सुनिश्चित गर्छ। विश्वसनीयता, दक्षता, र ग्राहक सन्तुष्टिमा प्रतिबद्धता सहित, टुफानको बस टिकटिङले बस सञ्चालनको तरिका परिवर्तन गर्छ, जसले सञ्चालनकर्ताहरू र यात्रुहरूको लागि सुविधाजनक बनाउँछ.`}
-{" "}              </p>
+                operators and travelers.`
+                  : `टुफानको बस टिकटिङ प्रणालीले लामो दुरीका बस रुटहरू व्यवस्थापन गर्न सहज र प्रभावकारी समाधान प्रदान गर्छ। उन्नत प्रविधिको उपयोग गरेर, यसले बस मालिकहरूलाई आफ्ना बसहरू सूचीबद्ध गर्न, एजेन्सीमार्फत टिकट बिक्री व्यवस्थापन गर्न, र टिकट प्रमाणीकरणलाई सहज बनाउँछ। यात्रुहरूले सजिलैसँग सिधै टिकट किन्ने सुविधा पाउँछन्, जसले सहज र झन्झटमुक्त अनुभव सुनिश्चित गर्छ। विश्वसनीयता, दक्षता, र ग्राहक सन्तुष्टिमा प्रतिबद्धता सहित, टुफानको बस टिकटिङले बस सञ्चालनको तरिका परिवर्तन गर्छ, जसले सञ्चालनकर्ताहरू र यात्रुहरूको लागि सुविधाजनक बनाउँछ.`}{" "}
+              </p>
               <p className="text-titleColor px-5 mb-5 mt-10">
                 {" "}
-                {language === "eng"? "Want to share a ride with us":"हामीसँग यात्रा साझा गर्न चाहनुहुन्छ?" }  {" "}
+                {language === "eng"
+                  ? "Want to share a ride with us"
+                  : "हामीसँग यात्रा साझा गर्न चाहनुहुन्छ?"}{" "}
               </p>
-              <p className="px-5 mb-5">{language === "eng" ? "Book a ticket to your destination": "आफ्नो गन्तव्यको लागि टिकट बुक गर्नुहोस्"}</p>
+              <p className="px-5 mb-5">
+                {language === "eng"
+                  ? "Book a ticket to your destination"
+                  : "आफ्नो गन्तव्यको लागि टिकट बुक गर्नुहोस्"}
+              </p>
               <div className="flex justify-center items-center flex-col gap-2">
                 <img
                   className="rounded-full w-36 h-36"
@@ -68,13 +76,15 @@ export default function BusTicket() {
                 />
                 <button className="p-5 bg-titleColor rounded-xl text-white font-bold">
                   {" "}
-                  {language === "eng" ? "Download App":"एप डाउनलोड गर्नुहोस्" }{" "}
+                  {language === "eng"
+                    ? "Download App"
+                    : "एप डाउनलोड गर्नुहोस्"}{" "}
                 </button>
                 <p className="text-foreground font-bold">
                   {" "}
                   {language === "eng"
                     ? "Tufan Ride Share App"
-                    : "टुफान राइड शेयर एप"}  {" "}
+                    : "टुफान राइड शेयर एप"}{" "}
                 </p>
               </div>
             </div>
