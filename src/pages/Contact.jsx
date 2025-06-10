@@ -62,17 +62,18 @@ export default function Contact() {
               We are here to help you in every way possible. Feel free to leave
               a message{" "}
             </p>
-            <form className="pt-4">
+            <form className="pt-4" action="https://formspree.io/f/xqabpjvp" method="POST">
               <div className="mb-4">
                 <label
                   className="block text-sm font-medium mb-2"
-                  htmlFor="phone"
+                  htmlFor="fullName"
                 >
                   Full Name
                 </label>
                 <input
                   type="text"
-                  id="phone"
+                  id="fullName"
+                  name="fullName"
                   className="w-full px-3 py-3 bg-background border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
@@ -91,13 +92,14 @@ export default function Contact() {
               <div className="mb-4">
                 <label
                   className="block text-sm font-medium mb-2"
-                  htmlFor="phone"
+                  htmlFor="title"
                 >
                   Title
                 </label>
                 <input
                   type="text"
-                  id="phone"
+                  id="title"
+                  name="title"
                   className="w-full px-3 py-3 bg-background border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
@@ -105,13 +107,14 @@ export default function Contact() {
               <div className="mb-4">
                 <label
                   className="block text-sm font-medium mb-2"
-                  htmlFor="phone"
+                  htmlFor="message"
                 >
                   Message
                 </label>
                 <textarea
-                  type=""
-                  id="phone"
+                  type="text"
+                  id="message"
+                  name="message"
                   placeholder="Enter your message here"
                   className="w-full px-3 py-3 bg-background border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
