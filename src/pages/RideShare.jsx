@@ -1,6 +1,3 @@
-import BannerImage from "../assets/rideBanner.png";
-import Person from "../assets/ridePerson.jpeg";
-import BannerGif from "../assets/home.gif";
 import NewBannerGif from "../assets/homepage.gif";
 import PhoneImage from "../assets/mobileImage.jpeg";
 import BusImage from "../assets/busImageOne.jpeg";
@@ -106,7 +103,10 @@ export default function RideShare() {
         </div>
         <div className="flex gap-3 p-8">
           <div className="px-8 flex-1 p-8 border shadow-sm border-white rounded-md  bg-white dark:bg-[#262728] dark:border-[#262728]">
-            <p className="text-titleColor font-bold pb-3 text-xl"> {language === "eng" ? "Features" : "सुविधाहरू"}</p>
+            <p className="text-titleColor font-bold pb-3 text-xl">
+              {" "}
+              {language === "eng" ? "Features" : "सुविधाहरू"}
+            </p>
             <ol className="list-decimal px-4">
               {features.map((feature) => (
                 <li key={feature.id}>

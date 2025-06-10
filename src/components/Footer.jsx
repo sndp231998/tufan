@@ -165,7 +165,9 @@ const Footer = () => {
                 <li>FAQ</li>
               </Link>
               <li>T&C</li>
-              <li>Privacy Policy</li>
+              <Link to={PATHS.PRIVACYPOLICY}>
+                <li>Privacy Policy</li>
+              </Link>
             </ol>
           </div>
         </div>
@@ -174,7 +176,9 @@ const Footer = () => {
             Follow us on{" "}
           </h1>
           <div className="flex flex-wrap gap-3 pt-2">
+            {" "}
             <a href="https://www.facebook.com/share/16CdnTT54e/">
+              {" "}
               <FacebookIcon />
             </a>
             <LinkedInIcon />
@@ -192,7 +196,8 @@ const Footer = () => {
           </p>
           <p className="text-center text-xs">
             {" "}
-            &copy; Powered by: <a href="https://www.a1itinnovation.com.np">A1 IT Innovation</a>
+            &copy; Powered by:{" "}
+            <a href="https://www.a1itinnovation.com.np">A1 IT Innovation</a>
           </p>
         </div>
       </div>

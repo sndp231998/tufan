@@ -12,4 +12,5 @@ export const PATHS = {
   PASSWORDPAGE: "/passwordpage",
   RIDESHARE: "/busticket",
   BUSTICKET: "/rideshare",
+  PRIVACYPOLICY: "/policy",
 };
