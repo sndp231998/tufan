@@ -1,10 +1,10 @@
-import { ThemeContext } from "../themeContext";
-import { useContext } from "react";
+import { useState } from "react";
 import ContactImage from "../assets/tufanContact.jpeg";
+import toast from "react-hot-toast";
 
 const mailIcon = () => (
   <svg
-    className="w-6 h-6 "
+    className="w-6 h-6"
     viewBox="0 0 24 24"
     fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"
@@ -30,6 +30,7 @@ const mailIcon = () => (
 
 const phoneIcon = () => (
   <svg
+  className="w-6 h-6"
     fill="currentColor"
     viewBox="0 0 1024 1024"
     xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +48,37 @@ const phoneIcon = () => (
 );
 
 export default function Contact() {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setLoading(true);
+    const formData = new FormData(event.target);
+
+    try {
+      const response = await fetch("https://formspree.io/f/xqabpjvp", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+      console.log("Response:", response.ok);
+      if (response.ok) {
+        setSubmitted(true);
+        toast.success("Form submitted successfully!");
+        console.log("Form submitted successfully!");
+        event.target.reset();
+      } else {
+      toast.error("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      toast.error("An error occurred while submitting the form.");
+    } finally {
+      setLoading(false);
+    }
+  }
   return (
     <div className="bg-background">
       <div className="flex flex-col gap-2 sm:flex-row justify-center">
@@ -62,7 +93,7 @@ export default function Contact() {
               We are here to help you in every way possible. Feel free to leave
               a message{" "}
             </p>
-            <form className="pt-4" action="https://formspree.io/f/xqabpjvp" method="POST">
+            <form className="pt-4" onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label
                   className="block text-sm font-medium mb-2"
@@ -123,7 +154,7 @@ export default function Contact() {
                 type="submit"
                 className="w-full bg-titleColor text-white py-4 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               >
-                Send
+                {loading ? "Sending..." : "Send"}
               </button>
             </form>
           </div>
@@ -132,11 +163,11 @@ export default function Contact() {
           <img src={ContactImage} className="rounded-md w-full max-h-full" />
 
           <div className="flex gap-8 p-4">
-            <p>
-              <mailIcon /> info@mytufan.com
+            <p className="flex flex-row gap-2">
+{mailIcon()} info@mytufan.com
             </p>
-            <p>
-              <phoneIcon />
+            <p className="flex flex-row">
+              {phoneIcon()}<phoneIcon />
               +9779767781922
             </p>
           </div>
