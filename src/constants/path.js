@@ -13,5 +13,6 @@ export const PATHS = {
   RIDESHARE: "/rideshare",
   BUSTICKET: "/busticket",
   PRIVACYPOLICY: "/privacy",
+  POLICY: "/policy",
   TC: "/terms-and-conditions",
 };

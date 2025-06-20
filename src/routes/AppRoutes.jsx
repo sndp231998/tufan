@@ -15,6 +15,7 @@ import RideShare from "../pages/RideShare";
 import BusTicket from "../pages/BusTicket";
 import Policy from "../pages/Policy";
 import TC from "../pages/TC";
+import Privacy from "../pages/Privacy";
 
 export default function AppRoutes() {
   return (
@@ -34,7 +35,8 @@ export default function AppRoutes() {
           <Route path={PATHS.RIDESHARE} element={<RideShare />} />
           <Route path={PATHS.BUSTICKET} element={<BusTicket />} />
           <Route path={PATHS.PRIVACYPOLICY} element={<Policy />} />
-          <Route path={PATHS.TC} element={<TC/>} />
+          <Route path={PATHS.POLICY} element={<Privacy />} />
+          <Route path={PATHS.TC} element={<TC />} />
         </Route>
       </Routes>
     </BrowserRouter>
