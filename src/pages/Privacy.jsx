@@ -151,10 +151,11 @@ export default function Privacy() {
         Tufan respects your right to privacy and control over your data.
       </p>
       <p class="mb-4">
-        You may delete your personal data and account directly from the Tufan
-        app by going to Settings → Delete My Data / Delete My Account.
+        If you wish to delete your personal data or terminate your account, you
+        must contact the Tufan Transport head office. We will verify your
+        identity and process the deletion request as soon as possible.
       </p>
-      <p class="mb-4">Upon confirmation:</p>
+      <p class="mb-4">Once confirmed: </p>
       <ul class="list-disc list-inside mb-4">
         <li>
           Your account and all associated data will be permanently deleted
@@ -163,14 +164,21 @@ export default function Privacy() {
         <li>The deletion process is immediate and irreversible</li>
       </ul>
       <p class="mb-6">
-        We do not retain personal information after deletion, except where
-        required by law or for legal, financial, or regulatory compliance.
+        We do not retain personal information after deletion, except when
+        required by law or for legal, financial, or regulatory obligations.
       </p>
 
       <h2 class="text-xl font-semibold mb-2">Contact Us</h2>
+      <p>
+        If you have any questions about this Privacy Policy or wish to delete
+        your data, you can contact us at:{" "}
+      </p>
       <ul class="list-disc list-inside mb-6">
         <li>
           <strong>Email:</strong> info@mytufan.com
+        </li>
+        <li>
+          <strong>Head Office:</strong> Damak, Jhapa, Koshi Province, Nepal
         </li>
       </ul>
     </div>
