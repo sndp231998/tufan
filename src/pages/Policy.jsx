@@ -2,159 +2,175 @@ export default function Policy() {
   return (
     <div class="max-w-3xl mx-auto bg-background p-8 my-10 rounded-lg shadow-md">
       <h1 class="text-3xl font-bold text-center mb-6">
-        Privacy Policy for Tufan
+        Terms of Use for Tufan Transport App
       </h1>
-      <p class="text-sm mb-4">
-        <strong>Effective Date:</strong> June 1st, 2025
+      <p class="mb-6">
+        These Terms of Use (“Terms”) govern your access to and use of the
+        services, products, and platforms offered by Tufan Transport Private
+        Limited, a company registered in Nepal with its head office in Damak,
+        Jhapa, Koshi Province (hereinafter referred to as "Tufan", “we”, “our”,
+        or “us”).
       </p>
       <p class="mb-6">
-        At Tufan, we are committed to protecting your privacy. This Privacy
-        Policy explains how we collect, use, and protect your personal data when
-        you use our ride-sharing platform, Tufan. By using our app, you agree to
-        the practices outlined in this Privacy Policy.
+        By accessing, downloading, or using the Tufan mobile application or
+        related services, you acknowledge that you have read, understood, and
+        agree to be bound by these Terms and our Privacy Policy. If you do not
+        agree, please discontinue use of the platform.
       </p>
 
-      <h2 class="text-xl font-semibold mb-2">1. Information We Collect</h2>
-      <p class="mb-2">
-        <strong>Personal Information</strong>
+      <h2 class="text-xl font-semibold mb-2">1. About the Service</h2>
+      <p class="mb-6">
+        Tufan is a subscription-based ride-sharing platform connecting commuters
+        with Rider Partners for cost-effective, safe, and reliable
+        transportation. Through the mobile app, users can explore routes,
+        schedule shared rides, and access commuting solutions tailored to their
+        needs.
       </p>
+
+      <h2 class="text-xl font-semibold mb-2">2. User Eligibility</h2>
+      <ul class="list-disc list-inside mb-4">
+        <li>Students seeking affordable daily commuting</li>
+        <li>
+          Employees and professionals looking for fast and secure transportation
+        </li>
+        <li>
+          Individuals interested in becoming Rider Partners and earning an
+          income
+        </li>
+      </ul>
+      <p class="mb-6">Users must:</p>
+      <ul class="list-disc list-inside mb-6">
+        <li>Be at least 18 years old, or have guardian consent if underage</li>
+        <li>Reside in areas served by Tufan</li>
+        <li>
+          Be legally capable of entering into agreements under Nepalese law
+        </li>
+      </ul>
+
+      <h2 class="text-xl font-semibold mb-2">3. User Accounts</h2>
+      <p class="mb-6">
+        All users register via the Tufan app and begin as Passengers. To become
+        a Rider Partner, users must complete an in-app registration and
+        verification process. Each user may only maintain one account per role
+        and must provide accurate and current information at all times.
+      </p>
+
+      <h2 class="text-xl font-semibold mb-2">4. Rider Enrollment</h2>
+      <p class="mb-2">To join as a Rider Partner, users must:</p>
+      <ul class="list-disc list-inside mb-4">
+        <li>Submit a valid National ID</li>
+        <li>Hold a legal Nepalese Driving License</li>
+        <li>
+          Provide correct vehicle details (registration, engine, chassis
+          numbers)
+        </li>
+        <li>Present proof of cleared vehicle taxes</li>
+      </ul>
+      <p class="mb-6">
+        Failure to meet these requirements may result in disqualification or
+        suspension.
+      </p>
+
+      <h2 class="text-xl font-semibold mb-2">5. Code of Conduct</h2>
+      <p class="mb-2">All users agree to:</p>
+      <ul class="list-disc list-inside mb-4">
+        <li>Maintain respectful, polite, and safe interactions</li>
+        <li>Avoid harassment, abuse, or discrimination</li>
+        <li>Refrain from threatening, offensive, or disruptive behavior</li>
+      </ul>
+      <p class="mb-6">
+        Violations may lead to immediate removal or legal action.
+      </p>
+
+      <h2 class="text-xl font-semibold mb-2">6. Payments and Transactions</h2>
       <ul class="list-disc list-inside mb-4">
         <li>
-          <strong>User Registration:</strong> We collect your name, address,
-          contact number, and Gmail.
+          Passengers pay Rider Partners directly—in cash or via mutually agreed
+          online methods.
         </li>
+        <li>Tufan does not mediate ride payments.</li>
         <li>
-          <strong>Driver/Rider Registration:</strong> We collect vehicle
-          information (brand, manufacture year, registration number), driving
-          license details, and pictures of both.
+          Rider Partners pay for platform access through IME PAY, a secure
+          Nepalese payment gateway.
         </li>
       </ul>
-      <p class="mb-2">
-        <strong>Location Data</strong>
+      <p class="mb-6">
+        Tufan does not store financial data, except minimal reference
+        information for support purposes.
+      </p>
+
+      <h2 class="text-xl font-semibold mb-2">7. Data Collection and Privacy</h2>
+      <ul class="list-disc list-inside mb-4">
+        <li>
+          <strong>Required:</strong> Name, address, phone number
+        </li>
+        <li>
+          <strong>Optional:</strong> Email, date of birth
+        </li>
+        <li>
+          <strong>Other:</strong> Location data (with your explicit permission),
+          payment records, and ride history
+        </li>
+      </ul>
+      <p class="mb-4">
+        All data is stored securely and used only to provide and improve our
+        services.
       </p>
       <p class="mb-4">
-        We request your consent to access your location data, which is essential
-        for the operation of our service.
+        We do not sell or share your personal information with third parties,
+        except when required by law.
       </p>
-      <p class="mb-2">
-        <strong>Payment Information</strong>
+      <p class="mb-6">
+        We collect location data only with your consent, to help match you with
+        nearby riders or passengers. You may request data deletion or account
+        removal anytime via the app’s Settings section.
+      </p>
+
+      <h2 class="text-xl font-semibold mb-2">8. Disclaimer</h2>
+      <p class="mb-6">
+        Tufan offers no service warranties beyond ensuring responsible data
+        handling. We are not liable for:
+      </p>
+      <ul class="list-disc list-inside mb-6">
+        <li>Ride delays or cancellations</li>
+        <li>User disputes</li>
+        <li>Network interruptions or technical failures</li>
+      </ul>
+      <p class="mb-6">Use of the platform is at your own risk.</p>
+
+      <h2 class="text-xl font-semibold mb-2">9. Legal Jurisdiction</h2>
+      <p class="mb-6">
+        All disputes are governed by the laws of Nepal and fall under the
+        jurisdiction of Nepalese courts.
+      </p>
+
+      <h2 class="text-xl font-semibold mb-2">
+        10. Data Deletion and Account Termination
+      </h2>
+      <p class="mb-4">
+        Tufan respects your right to privacy and control over your data.
       </p>
       <p class="mb-4">
-        We collect payment details through a secure, third-party payment gateway
-        for processing transactions.
+        You may delete your personal data and account directly from the Tufan
+        app by going to Settings → Delete My Data / Delete My Account.
       </p>
-      <p class="mb-2">
-        <strong>Data Storage</strong>
-      </p>
-      <p class="mb-6">
-        All data is securely stored on our encrypted servers to protect your
-        information from unauthorized access.
-      </p>
-
-      <h2 class="text-xl font-semibold mb-2">2. How We Use Your Information</h2>
-      <ul class="list-disc list-inside mb-6">
+      <p class="mb-4">Upon confirmation:</p>
+      <ul class="list-disc list-inside mb-4">
         <li>
-          <strong>Regular Updates & Security:</strong> To send updates and
-          security patches to enhance your experience.
+          Your account and all associated data will be permanently deleted
         </li>
-        <li>
-          <strong>KYC Verification:</strong> For identity verification during
-          the registration process.
-        </li>
-        <li>
-          <strong>Legal Compliance:</strong> To comply with legal requirements
-          and provide necessary data to authorities when required.
-        </li>
-        <li>
-          <strong>Emergency Communication:</strong> To communicate with relevant
-          authorities in case of an emergency.
-        </li>
+        <li>All ride history and saved preferences will be erased</li>
+        <li>The deletion process is immediate and irreversible</li>
       </ul>
+      <p class="mb-6">
+        We do not retain personal information after deletion, except where
+        required by law or for legal, financial, or regulatory compliance.
+      </p>
 
-      <h2 class="text-xl font-semibold mb-2">3. Data Sharing and Disclosure</h2>
+      <h2 class="text-xl font-semibold mb-2">Contact Us</h2>
       <ul class="list-disc list-inside mb-6">
-        <li>
-          <strong>Third-Party Service Providers:</strong> We use a secure,
-          leading third-party payment gateway for processing payments.
-        </li>
-        <li>
-          <strong>Legal Requirements:</strong> In the event of a legal inquiry
-          or when required by authorities, we may disclose your data to comply
-          with legal obligations.
-        </li>
-      </ul>
-
-      <h2 class="text-xl font-semibold mb-2">4. Data Retention</h2>
-      <ul class="list-disc list-inside mb-6">
-        <li>We retain user data for as long as the account remains active.</li>
-        <li>
-          <strong>Payment and Transaction History:</strong> These records are
-          stored for 90 days.
-        </li>
-        <li>
-          <strong>Account Deletion:</strong> If you request account deletion,
-          your data will be permanently removed from our records.
-        </li>
-      </ul>
-
-      <h2 class="text-xl font-semibold mb-2">5. Your Rights and Control</h2>
-      <ul class="list-disc list-inside mb-6">
-        <li>
-          <strong>View & Update:</strong> You can view and update your personal
-          information through the settings section of the app.
-        </li>
-        <li>
-          <strong>Account Deletion:</strong> You can request account deletion,
-          and we will remove your data from our records.
-        </li>
-      </ul>
-
-      <h2 class="text-xl font-semibold mb-2">
-        6. Cookies and Tracking Technologies
-      </h2>
-      <p class="mb-6">
-        We do not track user behavior. However, we retain records of user
-        preferences based on past history with Tufan.
-      </p>
-
-      <h2 class="text-xl font-semibold mb-2">7. Data Security</h2>
-      <p class="mb-6">
-        We use encryption technology to protect your data. This ensures that
-        your information is secure and cannot be accessed by unauthorized
-        individuals.
-      </p>
-
-      <h2 class="text-xl font-semibold mb-2">
-        8. International Data Transfers
-      </h2>
-      <p class="mb-6">Tufan does not transfer your data across borders.</p>
-
-      <h2 class="text-xl font-semibold mb-2">9. Children’s Privacy</h2>
-      <p class="mb-6">
-        Tufan is intended for users aged 16 and above. We do not knowingly
-        collect data from children under this age.
-      </p>
-
-      <h2 class="text-xl font-semibold mb-2">
-        10. Changes to This Privacy Policy
-      </h2>
-      <p class="mb-6">
-        We may update this Privacy Policy from time to time. If there are any
-        significant changes, we will notify you at least 15 days prior to the
-        changes via in-app notifications.
-      </p>
-
-      <h2 class="text-xl font-semibold mb-2">11. Contact Us</h2>
-      <p class="mb-2">
-        If you have any questions or concerns about this Privacy Policy or how
-        we handle your data, you can contact us using the following methods:
-      </p>
-      <ul class="list-disc list-inside mb-2">
         <li>
           <strong>Email:</strong> info@mytufan.com
-        </li>
-        <li>
-          <strong>Phone:</strong> +977 976-7781922
         </li>
       </ul>
     </div>
