@@ -16,6 +16,7 @@ import BusTicket from "../pages/BusTicket";
 import Policy from "../pages/Policy";
 import TC from "../pages/TC";
 import Privacy from "../pages/Privacy";
+import DeleteUser from "../pages/Delete_user";
 
 export default function AppRoutes() {
   return (
@@ -37,6 +38,7 @@ export default function AppRoutes() {
           <Route path={PATHS.PRIVACYPOLICY} element={<Policy />} />
           <Route path={PATHS.POLICY} element={<Privacy />} />
           <Route path={PATHS.TC} element={<TC />} />
+          <Route path={PATHS.DeleteUser} element={<DeleteUser />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -165,10 +165,13 @@ const Footer = () => {
                 <li>FAQ</li>
               </Link>
               <Link to={PATHS.TC}>
-              <li>T&C</li>
+                <li>T&C</li>
               </Link>
               <Link to={PATHS.PRIVACYPOLICY}>
                 <li>Privacy Policy</li>
+              </Link>
+              <Link to={PATHS.DeleteUser}>
+                <li>Delete User Account</li>
               </Link>
             </ol>
           </div>

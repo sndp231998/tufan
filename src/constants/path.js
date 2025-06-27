@@ -15,4 +15,5 @@ export const PATHS = {
   PRIVACYPOLICY: "/privacy",
   POLICY: "/policy",
   TC: "/terms-and-conditions",
+  DeleteUser: "/delete-account",
 };
