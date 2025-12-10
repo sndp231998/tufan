@@ -12,7 +12,6 @@ import RegisterPage from "../pages/auth/RegisterPage";
 import OtpPage from "../pages/auth/OtpPage";
 import PasswordPage from "../pages/auth/PasswordPage";
 import RideShare from "../pages/RideShare";
-import BusTicket from "../pages/BusTicket";
 import Policy from "../pages/Policy";
 import TC from "../pages/TC";
 import Privacy from "../pages/Privacy";
@@ -34,7 +33,6 @@ export default function AppRoutes() {
           <Route path={PATHS.OTPPAGE} element={<OtpPage />} />
           <Route path={PATHS.PASSWORDPAGE} element={<PasswordPage />} />
           <Route path={PATHS.RIDESHARE} element={<RideShare />} />
-          <Route path={PATHS.BUSTICKET} element={<BusTicket />} />
           <Route path={PATHS.PRIVACYPOLICY} element={<Policy />} />
           <Route path={PATHS.POLICY} element={<Privacy />} />
           <Route path={PATHS.TC} element={<TC />} />

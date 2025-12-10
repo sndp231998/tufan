@@ -160,11 +160,6 @@ export default function Navbar() {
                         RideShare
                       </span>
                     </Link>{" "}
-                    <Link to={PATHS.BUSTICKET}>
-                      <span className="block text-sm text-gray-800 dark:text-white hover:text-[#E85C40] transition-colors duration-200">
-                        Bust Ticketing
-                      </span>{" "}
-                    </Link>{" "}
                   </div>
                 )}
               </button>

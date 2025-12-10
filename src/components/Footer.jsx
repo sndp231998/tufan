@@ -139,9 +139,9 @@ const Footer = () => {
           <div className="flex-1 p-3 space-y-1">
             <h1 className="w-full text-titleColor font-bold">Our Services </h1>
             <ol>
-              <Link to={PATHS.BUSTICKET}>
+              {/* <Link to={PATHS.BUSTICKET}>
                 <li>Bus Ticketing</li>{" "}
-              </Link>
+              </Link> */}
               <Link to={PATHS.RIDESHARE}>
                 <li>Ride Sharing</li>{" "}
               </Link>

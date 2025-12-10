@@ -8,24 +8,18 @@ import { Helmet } from "react-helmet";
 export default function Home() {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const features = [
-    { id: 0, textEng: "Seamless Bus Ticketing", textNep: "सहज बस टिकटिङ" },
     {
-      id: 1,
+      id: 0,
       textEng: "Subscription-Based Ride Sharing",
       textNep: "सदस्यता-आधारित सवारी साझेदारी",
     },
     {
-      id: 2,
-      textEng: "Efficient Bus Route Management",
-      textNep: "प्रभावकारी बस रूट व्यवस्थापन",
-    },
-    {
-      id: 3,
+      id: 1,
       textEng: "Safe and Reliable Travel Experience",
       textNep: "सुरक्षित र भरपर्दो यात्रा अनुभव",
     },
     {
-      id: 4,
+      id: 2,
       textEng: "Cutting-Edge Technology Integration",
       textNep: "अत्याधुनिक प्रविधि एकीकरण",
     },
@@ -39,11 +33,11 @@ export default function Home() {
         <title>Tufan Ride Share | Affordable and Safe Travel</title>
         <meta
           name="description"
-          content="Experience hassle-free ride sharing and bus ticketing with Tufan. Safe, reliable, and cost-effective transportation."
+          content="Experience hassle-free ride sharing with Tufan. Safe, reliable, and cost-effective transportation."
         />
         <meta
           name="keywords"
-          content="Tufan, Ride Share, Bus Ticket, Travel Nepal, Safe Travel"
+          content="Tufan, Ride Share, Travel Nepal, Safe Travel"
         />
       </Helmet>
       {/* SEO End */}
@@ -59,9 +53,8 @@ export default function Home() {
                 {language === "eng" ? (
                   <span>
                     Tufan is redefining transportation with innovative
-                    solutions. Our seamless bus ticketing system and
-                    subscription-based ride-sharing model prioritize safety,
-                    efficiency, and customer satisfaction. By leveraging
+                    solutions. Our subscription-based ride-sharing model prioritizes
+                    safety, efficiency, and customer satisfaction. By leveraging
                     cutting-edge technology, Tufan ensures a reliable, dynamic,
                     and cost-effective travel experience for both passengers and
                     operators. Join us to ride smart and travel safe with Tufan.
@@ -69,8 +62,7 @@ export default function Home() {
                 ) : (
                   <span>
                     तुफान नविन समाधानहरू मार्फत यातायातलाई नयाँ परिभाषा दिइरहेको
-                    छ। हाम्रो सहज बस टिकटिङ प्रणाली र सदस्यता-आधारित
-                    सवारी-साझेदारी मोडेलले सुरक्षा, दक्षता, र ग्राहक
+                    छ। हाम्रो सदस्यता-आधारित सवारी-साझेदारी मोडेलले सुरक्षा, दक्षता, र ग्राहक
                     सन्तुष्टिलाई प्राथमिकता दिन्छ। अत्याधुनिक प्रविधिको उपयोग
                     गरेर, तुफानले यात्रु र सञ्चालनकर्ताहरूका लागि भरपर्दो,
                     गतिशील, र किफायती यात्रा अनुभव सुनिश्चित गर्दछ। तुफानसँग

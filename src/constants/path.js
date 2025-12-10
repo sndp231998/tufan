@@ -11,7 +11,6 @@ export const PATHS = {
   OTPPAGE: "/otppage",
   PASSWORDPAGE: "/passwordpage",
   RIDESHARE: "/rideshare",
-  BUSTICKET: "/busticket",
   PRIVACYPOLICY: "/privacy",
   POLICY: "/policy",
   TC: "/terms-and-conditions",
