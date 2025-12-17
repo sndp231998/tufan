@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/tufanLogo.png";
 import { PATHS } from "../constants/path";
+import { BRANCHES } from "../constants/Branch";
 const FacebookIcon = () => (
   <svg
     className="w-8 h-8 pb-1"
@@ -147,12 +148,46 @@ const Footer = () => {
               </Link>
             </ol>
           </div>
-          <div className="flex-1 p-3 space-y-1">
+          {/* <div className="flex-1 p-3 space-y-1">
             <h1 className="w-full text-titleColor font-bold">Documentation </h1>
             <ol>
               <li>Branch Extension</li>
             </ol>
-          </div>
+          </div> */}
+          <div className="flex-1 p-3 space-y-2">
+  <h1 className="w-full text-titleColor font-bold">
+    Our Branches (Nepal)
+  </h1>
+
+  <ul className="text-sm space-y-2">
+    {BRANCHES.map((branch, index) => (
+      <li
+        key={index}
+        className="flex flex-col gap-0.5 leading-tight"
+      >
+        <span className="font-semibold">
+          {branch.province}
+        </span>
+
+     <span className="flex flex-nowrap gap-3 text-xs text-gray-600 dark:text-gray-300">
+  <a href={`tel:${branch.phone}`} className="hover:underline whitespace-nowrap">
+    📞 {branch.phone}
+  </a>
+
+  <a
+    href={`mailto:${branch.email}`}
+    className="hover:underline whitespace-nowrap"
+  >
+    ✉️ {branch.email}
+  </a>
+</span>
+
+      </li>
+    ))}
+  </ul>
+</div>
+
+
           <div className="flex-1 md:mr-20 p-3">
             <h1 className="w-full text-titleColor font-bold space-y-1">
               Quick Links{" "}
